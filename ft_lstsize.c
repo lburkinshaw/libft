@@ -19,9 +19,9 @@ int	ft_lstsize(t_list *lst)
 
 	count = 0;
 	ptr = lst;
-	if (lst == '\0')
+	if (!lst)
 		return (0);
-	while (ptr != '\0')
+	while (ptr != NULL)
 	{
 		ptr = ptr -> next;
 		count++;
